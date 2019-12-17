@@ -1,20 +1,31 @@
 {
-  "name": "carrito",
-  "version": "1.0.0",
-  "description": "Carrito de compras con SASS y Flexbox",
-  "main": "gulpfile.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Juan De la torre @JuanDevWP",
-  "license": "ISC",
-  "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^5.0.0",
-    "gulp-sass": "^3.2.1"
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions"
-  ]
+    "name": "adminflex",
+    "version": "1.0.0",
+    "description": "AdminFlex con Flexbox",
+    "main": "gulpfile.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/jlferrete/AdminFlex.git"
+    },
+    "author": "JlFerrete",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/jlferrete/AdminFlex/issues"
+    },
+    "homepage": "https://github.com/jlferrete/AdminFlex#readme",
+    "devDependencies": {
+        "gulp": "^4.0.2",
+        "gulp-autoprefixer": "^7.0.1",
+        "gulp-sass": "^4.0.2"
+    },
+    "browserList": [
+        "> 1%",
+        "last 2 versions"
+    ],
+    "dependencies": {
+        "postcss-scss": "^2.0.0"
+    }
 }
