@@ -27,10 +27,11 @@ img {
   display: none;
 }
 
+/** Contenido **/
 .pagina {
-  min-height: 100%;
   display: flex;
   flex-direction: column;
+  min-height: 100%;
 }
 
 .header {
@@ -40,9 +41,7 @@ img {
 .header .nombre-sitio {
   flex: 0 0 5rem;
   background-color: #003f8c;
-  padding: 1rem;
-  display: flex;
-  align-items: center;
+  padding-left: 1rem;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -53,7 +52,6 @@ img {
 
 .header .nombre-sitio h1 {
   color: #FFFFFF;
-  margin: 0;
 }
 
 .header .nombre-sitio .escritorio {
@@ -72,19 +70,53 @@ img {
   }
 }
 
-.barra {
+.header .barra {
   display: flex;
-  justify-content: space-between;
   flex: 1;
   background-color: #005b9f;
-  padding: 1rem;
+  justify-content: space-between;
 }
 
-.barra .menu-izquierdo {
+.menu-izquierdo {
   display: flex;
   align-items: center;
 }
 
+.menu-izquierdo .fa-arrow-right {
+  display: none;
+}
+
+.menu-derecho {
+  display: flex;
+}
+
+.menu-derecho .caja {
+  padding: 0 1rem;
+  display: flex;
+}
+
+.menu-derecho .caja:hover {
+  background-color: #004c86;
+}
+
+.menu-derecho a {
+  display: flex;
+  color: #FFFFFF;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.menu-derecho a span {
+  background-color: green;
+  border-radius: 50%;
+  padding: 0.5rem;
+  margin-left: 0.5rem;
+}
+
 .contenedor-principal {
+  display: flex;
+  align-items: stretch;
   flex: 1;
 }

@@ -26,10 +26,13 @@ img {
     display: none;
 }
 
+
+/** Contenido **/
+
 .pagina {
-    min-height: 100%;
     display: flex;
     flex-direction: column;
+    min-height: 100%;
 }
 
 .header {
@@ -40,12 +43,9 @@ img {
             flex: 0 0 20rem;
         }
         background-color: $secundario;
-        padding: 1rem;
-        display: flex;
-        align-items: center;
+        padding-left: 1rem;
         h1 {
             color: $blanco;
-            margin: 0;
         }
         .escritorio {
             display: none;
@@ -59,20 +59,49 @@ img {
             }
         }
     }
+    .barra {
+        display: flex;
+        flex: 1;
+        background-color: $primario;
+        justify-content: space-between;
+    }
 }
 
-.barra {
+.menu-izquierdo {
     display: flex;
-    justify-content: space-between;
-    flex: 1;
-    background-color: $primario;
-    padding: 1rem;
-    .menu-izquierdo {
+    align-items: center;
+    .fa-arrow-right {
+        display: none;
+    }
+}
+
+.menu-derecho {
+    display: flex;
+    .caja {
+        padding: 0 1rem;
         display: flex;
+        &:hover {
+            background-color: darken($primario, 5);
+        }
+    }
+    a {
+        display: flex;
+        color: $blanco;
+        text-decoration: none;
         align-items: center;
+        justify-content: center;
+        position: relative;
+        span {
+            background-color: green;
+            border-radius: 50%;
+            padding: 0.5rem;
+            margin-left: 0.5rem;
+        }
     }
 }
 
 .contenedor-principal {
+    display: flex;
+    align-items: stretch;
     flex: 1;
 }
