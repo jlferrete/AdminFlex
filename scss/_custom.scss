@@ -40,8 +40,12 @@ img {
             flex: 0 0 20rem;
         }
         background-color: $secundario;
+        padding: 1rem;
+        display: flex;
+        align-items: center;
         h1 {
             color: $blanco;
+            margin: 0;
         }
         .escritorio {
             display: none;
@@ -54,6 +58,18 @@ img {
                 display: none;
             }
         }
+    }
+}
+
+.barra {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    background-color: $primario;
+    padding: 1rem;
+    .menu-izquierdo {
+        display: flex;
+        align-items: center;
     }
 }
 
