@@ -32,6 +32,31 @@ img {
     flex-direction: column;
 }
 
+.header {
+    display: flex;
+    .nombre-sitio {
+        flex: 0 0 5rem;
+        @include desktop {
+            flex: 0 0 20rem;
+        }
+        background-color: $secundario;
+        h1 {
+            color: $blanco;
+        }
+        .escritorio {
+            display: none;
+            @include desktop {
+                display: block;
+            }
+        }
+        .movil {
+            @include desktop {
+                display: none;
+            }
+        }
+    }
+}
+
 .contenedor-principal {
     flex: 1;
 }
